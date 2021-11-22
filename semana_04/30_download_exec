@@ -1,0 +1,5 @@
+30 - No powershell da workstation, realize uma requisição
+no seu repositório do git em formato raw, fazendo com que
+seu script seja executado sem que você precise digita-lo. 
+
+IEX(New-Object Net.WebClient).downloadString('https://raw.githubusercontent.com/h41stur/dojo/main/semana_04/27_port_sccanner.ps1')
