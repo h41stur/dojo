@@ -1,0 +1,3 @@
+Sub PS()
+pid = Shell("cmd.exe /k PowerShell -c whoami", vbNormalFocus)
+End Sub
