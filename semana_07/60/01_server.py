@@ -14,6 +14,10 @@ lhost = "0.0.0.0"
 lport = 443
 buff = 1024
 
+server_crt = 'server.crt'
+
+server_key = 'server.key'
+
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((lhost,lport))
 server.listen(10)
@@ -23,7 +27,7 @@ print("[+] Iniciando handler!")
 while True:
     clientsocket, clientaddr = server.accept()
     print("[+] Recebendo conexao de " + clientaddr[0])
-    ssl_server = ssl.wrap_socket(clientsocket, server_side=True, certfile="server.crt", keyfile="server.key",
+    ssl_server = ssl.wrap_socket(clientsocket, server_side=True, certfile=server_crt, keyfile=server_key,
                                         ssl_version=ssl.PROTOCOL_TLSv1)
     data = ssl_server.read()
     data = data.decode()
