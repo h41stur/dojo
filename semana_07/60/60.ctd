@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="60" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1637967379" ts_lastsave="1637967380">
+    <rich_text>tcp.port == 443 &amp;&amp; ip.dst == 192.168.0.188 &amp;&amp; ip.src == 192.168.0.157</rich_text>
+  </node>
+</cherrytree>
